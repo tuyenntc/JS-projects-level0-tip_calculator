@@ -9,27 +9,29 @@
     
 </head>
 <body>
-    <h1>Tip calculator</h1>
     <div class="container">
-        <p>Bill amount</p>
-        <input type="text" id="amount" placeholder="amount to be paid">
-        <p>How was the service?</p>
-        <select name="" id="service">
-            <option selected disabled hidden>Select</option>
-            <option value="0.25">25% - Top notch</option>
-            <option value="0.20">20% - Excellent</option>
-            <option value="0.15">15% - Good</option>
-            <option value="0.10">10% - Normal</option>
-            <option value="0.05">5% - Not good</option>
-        </select>
-        <p>Total number of persons?</p>
-        <input type="text" id="person" placeholder="number of people sharing the bill">
-        <button id="calculate">Calculate</button>
-    </div>
-    <div class="tip">
-        <p>Tip amount</p>
-        <span id="total">0</span>
-        <span id="each">Each</span>
+        <h1>Tip calculator</h1>
+        <div class="wrapper">
+            <p>Bill amount</p>
+            <input type="text" id="amount" placeholder="amount to be paid">
+            <p>How was the service?</p>
+            <select name="" id="service">
+                <option selected disabled hidden>Select</option>
+                <option value="0.25">25% - Top notch</option>
+                <option value="0.20">20% - Excellent</option>
+                <option value="0.15">15% - Good</option>
+                <option value="0.10">10% - Normal</option>
+                <option value="0.05">5% - Not good</option>
+            </select>
+            <p>Total number of persons?</p>
+            <input type="text" id="person" placeholder="number of people sharing the bill">
+            <button id="calculate">Calculate</button>
+        </div>
+        <div class="tip">
+            <p>Tip amount</p>
+            <span id="total">0</span>
+            <span id="each">Each</span>
+        </div>
     </div>
 </body>
 </html>
