@@ -8,6 +8,9 @@
     <script defer src="script.js"></script>
     
 </head>
+
+<!-- shift + option + A: shortcut for cmt, and option + z for text wrapping
+-->
 <body>
     <div class="container">
         <h1>Tip calculator</h1>
@@ -15,7 +18,7 @@
             <p>Bill amount</p>
             <input type="text" id="amount" placeholder="amount to be paid">
             <p>How was the service?</p>
-            <select name="" id="service">
+            <select name="" id="services">
                 <option selected disabled hidden>Select</option>
                 <option value="0.25">25% - Top notch</option>
                 <option value="0.20">20% - Excellent</option>
@@ -23,14 +26,15 @@
                 <option value="0.10">10% - Normal</option>
                 <option value="0.05">5% - Not good</option>
             </select>
-            <p>Total number of persons?</p>
-            <input type="text" id="person" placeholder="number of people sharing the bill">
+           <!--  <p>Total number of persons?</p>
+            <input type="text" id="persons" placeholder="number of people sharing the bill"> -->
             <button id="calculate">Calculate</button>
         </div>
         <div class="tip">
-            <p>Tip amount</p>
+            <p>Tip amount ($): </p>
             <span id="total">0</span>
-            <span id="each">Each</span>
+            <p>Total amount ($): </p>
+            <span id="totalBill">0</span>
         </div>
     </div>
 </body>
